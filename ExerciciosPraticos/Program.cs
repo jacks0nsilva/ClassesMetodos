@@ -1,4 +1,6 @@
-﻿Console.WriteLine("## Classes e Objetos ##");
+﻿using ClasseDosCarros;
+
+Console.WriteLine("## Classes e Objetos ##");
 
 Carro chevrolet = new("Sedan", "Chevrolet", "Onix", 2016, 110);
 Carro ford = new("SUV", "Ford", "EcoSport", 2018, 120);
@@ -30,51 +32,23 @@ Console.Write("-> " + novaPotenciaFord);
 
 Console.WriteLine("\nO valor do campo Potencia foi alterado: " + ford.Potencia);
 
-class Carro
-{
-    public string? Modelo;
-    public string? Montadora;
-    public string? Marca;
-    public int Ano;
-    public int Potencia;
+Console.WriteLine("--------------------------------------------------------------------------");
 
-    public Carro(string modelo, string montadora, string marca, int ano, int potencia) 
-    {
-        Modelo = modelo;
-        Montadora = montadora;
-        Marca = marca;
-        Ano = ano;
-        Potencia = potencia;
-    }
+Console.WriteLine("\nUsando parâmetro out => Aumenta potencia e velocidade ");
+double novaPotencia = chevrolet.AumentarPotenciaVelocidade(chevrolet.Potencia, out double velocidade);
+Console.WriteLine("-Nova Potencia : " + novaPotencia);
+Console.WriteLine("-Nova Velocidade Máxima : " + velocidade);
 
-    public Carro(string modelo, string montadora)
-    {
-        Modelo = modelo;
-        Montadora = montadora;
-    }
+/* 
+ A palavra-chave out é usada para passar um argumento por referência igual a ref, mas o argumento pode ser
+passado sem atribuir nenhum valor a ele. Um argumento que é passado usando out deve ser inicializado no
+método chamado antes de retornar ao método chamador.
+Podemos usar a palavra-chave out para obter mais de um retorno de um método
+ */
 
+Console.WriteLine("--------------------------------------------------------------------------");
 
-    public void Acelerar(string? marca)
-    {
-        Console.WriteLine($"Acelerando o meu {marca}");
-    }
+ford.ExibirInfo(modelo: ford.Modelo, montadora: ford.Montadora, marca: ford.Marca, potencia: ford.Potencia);
+// Argumento ano opcional, nesse caso o parâmetro ano será padrão
 
-    public int VelocidadeMaxima(int potencia)
-    {
-        int velocidade = (int)(potencia * 1.75);
-        Console.WriteLine($"A velocidade máxima do {Marca} é de {velocidade} km/h");
-        return velocidade;
-    }
-
-    public int AumentarPotencia(int potencia)
-    {
-        potencia +=3;
-        return potencia;
-    }
-
-    public int AumentarPotencia(ref int potencia)
-    {
-        potencia += 3;
-        return potencia;
-    }
-}
+chevrolet.ExibirInfo(modelo: chevrolet.Modelo, montadora: chevrolet.Montadora, marca: chevrolet.Marca, potencia: chevrolet.Potencia, ano: ford.Ano);
