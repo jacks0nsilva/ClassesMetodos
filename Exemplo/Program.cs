@@ -21,7 +21,7 @@ class Cliente
         Renda = renda;
     }
    
-    public Cliente() // Construtor sem parâmetros, para atribuir valores padrão caso o objeto seja instanciado sem argumentos
+    public Cliente() // Construtor sem parâmetros, para atribuir valores padrões caso o objeto seja instanciado sem argumentos
     { }
 }
 

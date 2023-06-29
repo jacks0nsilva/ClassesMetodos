@@ -13,6 +13,23 @@ chevrolet.VelocidadeMaxima(chevrolet.Potencia);
 
 ford.VelocidadeMaxima(ford.Potencia);
 
+Console.WriteLine("--------------------------------------------------------------------------");
+
+Console.WriteLine("Aumentando a Potencia (por valor : + 3CV) : ");
+var novaPotenciaChevrolet = chevrolet.AumentarPotencia(chevrolet.Potencia);
+
+Console.Write("-> " + novaPotenciaChevrolet);
+Console.WriteLine("\nO valor do campo Potencia não foi alterado : " + chevrolet.Potencia);
+
+Console.WriteLine("--------------------------------------------------------------------------");
+
+Console.WriteLine("Aumentando a Potencia (por valor: +3CV) :");
+var novaPotenciaFord = ford.AumentarPotencia(ref ford.Potencia);
+
+Console.Write("-> " + novaPotenciaFord);
+
+Console.WriteLine("\nO valor do campo Potencia foi alterado: " + ford.Potencia);
+
 class Carro
 {
     public string? Modelo;
@@ -47,5 +64,17 @@ class Carro
         int velocidade = (int)(potencia * 1.75);
         Console.WriteLine($"A velocidade máxima do {Marca} é de {velocidade} km/h");
         return velocidade;
+    }
+
+    public int AumentarPotencia(int potencia)
+    {
+        potencia +=3;
+        return potencia;
+    }
+
+    public int AumentarPotencia(ref int potencia)
+    {
+        potencia += 3;
+        return potencia;
     }
 }
