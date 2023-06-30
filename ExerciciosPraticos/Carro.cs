@@ -61,7 +61,7 @@ namespace ClasseDosCarros
             return potencia;
         }
 
-        public void ExibirInfo(string? modelo, string? montadora, string? marca, int potencia, int ano = 2000)
+        public void ExibirInfo(string? modelo, string? montadora, string? marca, int potencia, int ano = 2000) // Parâmetro ano definido como padrão
         {
             Console.WriteLine($"Modelo: {modelo} | Montadora: {montadora} | Marca: {marca} | Potencia: {potencia}Cv | Ano: {ano}");
         }

@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosPraticos", "ExerciciosPraticos\ExerciciosPraticos.csproj", "{3F34D282-D82F-4C1D-9114-9058423B44B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciciosPraticos", "ExerciciosPraticos\ExerciciosPraticos.csproj", "{3F34D282-D82F-4C1D-9114-9058423B44B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo", "Exemplo\Exemplo.csproj", "{28E7413B-A2BD-4B70-91A1-E40E15E9B6BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exemplo", "Exemplo\Exemplo.csproj", "{28E7413B-A2BD-4B70-91A1-E40E15E9B6BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamposEstaticos", "CamposEstaticos\CamposEstaticos.csproj", "{676E8B8B-07E5-481A-9594-026692143247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstrutorEstatico", "ConstrutorEstatico\ConstrutorEstatico.csproj", "{91E4E342-6585-47C8-B650-AECBABECB1CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{28E7413B-A2BD-4B70-91A1-E40E15E9B6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E7413B-A2BD-4B70-91A1-E40E15E9B6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E7413B-A2BD-4B70-91A1-E40E15E9B6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676E8B8B-07E5-481A-9594-026692143247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676E8B8B-07E5-481A-9594-026692143247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676E8B8B-07E5-481A-9594-026692143247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676E8B8B-07E5-481A-9594-026692143247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E4E342-6585-47C8-B650-AECBABECB1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E4E342-6585-47C8-B650-AECBABECB1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E4E342-6585-47C8-B650-AECBABECB1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E4E342-6585-47C8-B650-AECBABECB1CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
