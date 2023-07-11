@@ -4,7 +4,7 @@ using System.Reflection.Metadata;
 Console.WriteLine("## Indexadores ##");
 
 Time time = new Time();
-// atribui valores = set
+// atribuindo valores = set
 time[1] = "Palmeiras";
 time[3] = "Santos";
 time[5] = "São Paulo";

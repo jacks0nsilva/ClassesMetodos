@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListT", "ListT\ListT.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioListT", "ExercicioListT\ExercicioListT.csproj", "{A8042E5F-EF19-4753-AD10-F9BF00DC7554}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexadores", "Indexadores\Indexadores.csproj", "{7994424C-F709-4E75-AC0C-212DA799042A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indexadores", "Indexadores\Indexadores.csproj", "{7994424C-F709-4E75-AC0C-212DA799042A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassRandom", "ClassRandom\ClassRandom.csproj", "{F8995139-0B71-4B2F-A833-3EEAA6E93A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassRandom", "ClassRandom\ClassRandom.csproj", "{F8995139-0B71-4B2F-A833-3EEAA6E93A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioColecoes", "ExercicioColecoes\ExercicioColecoes.csproj", "{2474663E-ABE7-44F8-8D96-72E52E52E73F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{F8995139-0B71-4B2F-A833-3EEAA6E93A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8995139-0B71-4B2F-A833-3EEAA6E93A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8995139-0B71-4B2F-A833-3EEAA6E93A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474663E-ABE7-44F8-8D96-72E52E52E73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474663E-ABE7-44F8-8D96-72E52E52E73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474663E-ABE7-44F8-8D96-72E52E52E73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474663E-ABE7-44F8-8D96-72E52E52E73F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
